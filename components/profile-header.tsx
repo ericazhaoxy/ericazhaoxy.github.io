@@ -4,11 +4,11 @@ export function ProfileHeader({ glitchActive }: { glitchActive: boolean }) {
   return (
     <div className="flex flex-col items-center justify-center w-full gap-2 md:gap-6">
       {/* Profile photo */}
-      <div className="w-[220px] md:w-[260px] max-w-full max-h-[360px] overflow-hidden rounded-2xl shadow-xl border-4 border-white dark:border-gray-800 flex-shrink-0 bg-white/5">
+      <div className="w-[260px] md:w-[300px] aspect-[3/4] overflow-hidden rounded-2xl shadow-xl border-4 border-white/20 dark:border-white/10 mt-2">
         <img
           src="/EricaZhaoProfilePic.jpg"
           alt="Erica Zhao"
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover object-center"
         />
       </div>
 
