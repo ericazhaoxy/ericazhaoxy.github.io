@@ -2,13 +2,15 @@ import { useState, useEffect, useRef } from "react"
 import gsap from "gsap"
 
 const roles = [
-	"Full-Stack Developer",
-	"AI Solutions Architect",
-	"Technical Storyteller",
-	"Applied AI Engineer",
-	"Startup Advisor",
-	"Coffee Lover",
-	"Lifelong Learner",
+  "Artificial Intelligence Engineer",
+  "Machine Learning Engineer",
+  "Applied Data Scientist",
+  "Full-Stack Developer",
+  "Entrepreneur",
+  "Multilingual Storyteller",
+  "Web3 Explorer",
+  "Classical Dancer",
+  "Coffee Lover ☕️",
 ]
 
 const LIGHTNING_ROLE = "Full-Stack Developer"
