@@ -1,57 +1,57 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { ProfileHeader } from "./profile-header"
 import { SocialLinks } from "./social-links"
 import { triggerRandomGlitchJump } from "@/lib/glitchJump"
 
-
 const videos = [
-	"/videos/3163534-hd_1920_1080_30fps.mp4", // Sci Wave
-	"/videos/2675508-hd_1920_1080_24fps.mp4", // Night City
-	"/videos/3129671-hd_1920_1080_30fps.mp4", // Network Data Center
-	"/videos/3141210-hd_1920_1080_25fps.mp4", // Digital Planet
-	"/videos/4990242-hd_1920_1080_30fps.mp4", // Glitch
-	"/videos/4990245-hd_1920_1080_30fps.mp4", // Sound Waves
+  "/videos/3163534-hd_1920_1080_30fps.mp4", // Sci Wave
+  "/videos/2675508-hd_1920_1080_24fps.mp4", // Night City
+  "/videos/3129671-hd_1920_1080_30fps.mp4", // Network Data Center
+  "/videos/3141210-hd_1920_1080_25fps.mp4", // Digital Planet
+  "/videos/4990242-hd_1920_1080_30fps.mp4", // Glitch
+  "/videos/4990245-hd_1920_1080_30fps.mp4", // Sound Waves
 ]
 
 export function AutoSliderBanner() {
-	const [currentIndex, setCurrentIndex] = useState(0)
-	const getInTouchBtnRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const getInTouchBtnRef = useRef<HTMLButtonElement | null>(null)
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setCurrentIndex((prevIndex) => (prevIndex + 1) % videos.length)
-		}, 10000)
-		return () => clearInterval(interval)
-	}, [])
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % videos.length)
+    }, 10000)
+    return () => clearInterval(interval)
+  }, [])
 
-	const glitchActive = videos[currentIndex] === "/videos/4990242-hd_1920_1080_30fps.mp4"
+  const glitchActive =
+    videos[currentIndex] === "/videos/4990242-hd_1920_1080_30fps.mp4"
 
-	// Make the button jump repeatedly during glitch mode
-	useEffect(() => {
-		let intervalId: NodeJS.Timeout | null = null;
-		function randomInterval() {
-			// Random ms between 350 and 5000
-			return Math.floor(Math.random() * (5000 - 350 + 1)) + 350;
-		}
-		let active = true;
-		function jumpLoop() {
-			if (!active) return;
-			if (getInTouchBtnRef.current) {
-				triggerRandomGlitchJump(getInTouchBtnRef.current);
-			}
-			intervalId = setTimeout(jumpLoop, randomInterval());
-		}
-		if (glitchActive) {
-			jumpLoop();
-		}
-		return () => {
-			active = false;
-			if (intervalId) clearTimeout(intervalId as any);
-		};
-	}, [glitchActive]);
+  // Make the button jump repeatedly during glitch mode
+  useEffect(() => {
+    let timeoutId: ReturnType<typeof setTimeout> | null = null
+
+    const randomInterval = () =>
+      Math.floor(Math.random() * (5000 - 350 + 1)) + 350
+
+    let active = true
+    const jumpLoop = () => {
+      if (!active) return
+      if (getInTouchBtnRef.current) {
+        triggerRandomGlitchJump(getInTouchBtnRef.current)
+      }
+      timeoutId = setTimeout(jumpLoop, randomInterval())
+    }
+
+    if (glitchActive) jumpLoop()
+
+    return () => {
+      active = false
+      if (timeoutId) clearTimeout(timeoutId)
+    }
+  }, [glitchActive])
 
   return (
     <div className="relative top-0 left-0 w-screen h-screen z-0 overflow-hidden">
@@ -78,10 +78,13 @@ export function AutoSliderBanner() {
         {/* Navbar (avatar, name, rotating title) */}
         <ProfileHeader glitchActive={glitchActive} />
 
-        {/* Subtitle/description (排版：两行、第二行更轻更小) */}
-        <p className="mx-auto max-w-[46rem] text-base md:text-lg leading-relaxed md:leading-8 text-white/75 mb-8 px-6 text-center">
-          Building full-stack experiences and agentic AI systems that deliver dependable intelligence, beautifully integrated.
-          <span className="block mt-2 text-sm md:text-base tracking-wide text-white/60">
+        {/* Subtitle/description (排版：稳的两行，不挤成一坨) */}
+        <p className="mx-auto max-w-2xl text-xl text-gray-300 mb-8 px-4 text-center leading-relaxed">
+          <span className="block">
+            Building full-stack experiences and agentic AI systems that deliver
+            dependable intelligence, beautifully integrated.
+          </span>
+          <span className="block mt-2">
             Fueled by curiosity, precision, and elegance.
           </span>
         </p>
@@ -101,8 +104,8 @@ export function AutoSliderBanner() {
               ref={getInTouchBtnRef}
               size="lg"
               variant="outline"
-              className={`border-pink-400 text-pink-400 hover:bg-pink-400/10 transition-all duration-200 ${
-                glitchActive ? "get-in-touch-btn" : ""
+              className={`border-pink-400 text-pink-400 hover:bg-pink-400/10 transition-all duration-200${
+                glitchActive ? " get-in-touch-btn" : ""
               }`}
             >
               Get in Touch
@@ -114,3 +117,4 @@ export function AutoSliderBanner() {
       </div>
     </div>
   )
+}
