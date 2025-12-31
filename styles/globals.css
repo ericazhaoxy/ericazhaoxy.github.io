@@ -1,0 +1,304 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Shimmer animation for logo */
+@keyframes shimmer {
+  0% {
+    background-position: -700px 0;
+  }
+  100% {
+    background-position: 700px 0;
+  }
+}
+.animate-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 2.5s linear infinite;
+}
+
+.text-coral-400 {
+  color: #FF6F61;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fixed-hero-video {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -20;
+  transition: opacity 0.7s;
+  pointer-events: none;
+}
+
+@layer utilities {
+  .text-balance {
+    overflow-wrap: break-word;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Responsive height for rotating title container */
+.rotating-title-container {
+  height: 50px !important;
+}
+@media (min-width: 768px) {
+  .rotating-title-container {
+    height: 90px !important;
+  }
+}
+
+/* Glitch effect for RotatingTitle (Full-Stack Developer) */
+.glitch-text {
+  color: var(--glitch-text, #fff);
+  text-shadow:
+    2px 0 var(--glitch-shadow1, #f0f),
+    -2px 0 var(--glitch-shadow2, #0ff),
+    0 2px var(--glitch-shadow3, #0f0),
+    0 -2px var(--glitch-shadow4, #ff0);
+  animation: glitch-colors 1.2s infinite linear alternate;
+}
+@keyframes glitch-colors {
+  0% { text-shadow: 2px 0 var(--glitch-shadow1, #f0f), -2px 0 var(--glitch-shadow2, #0ff), 0 2px var(--glitch-shadow3, #0f0), 0 -2px var(--glitch-shadow4, #ff0); }
+  20% { text-shadow: -2px 0 var(--glitch-shadow2, #0ff), 2px 0 var(--glitch-shadow1, #f0f), 0 -2px var(--glitch-shadow4, #ff0), 0 2px var(--glitch-shadow3, #0f0); }
+  40% { text-shadow: 2px 2px var(--glitch-shadow2, #0ff), -2px -2px var(--glitch-shadow1, #f0f), 2px -2px var(--glitch-shadow4, #ff0), -2px 2px var(--glitch-shadow3, #0f0); }
+  60% { text-shadow: 0 0 var(--glitch-text, #fff), 0 0 var(--glitch-text, #fff), 0 0 var(--glitch-text, #fff), 0 0 var(--glitch-text, #fff); }
+  100% { text-shadow: 2px 0 var(--glitch-shadow1, #f0f), -2px 0 var(--glitch-shadow2, #0ff), 0 2px var(--glitch-shadow3, #0f0), 0 -2px var(--glitch-shadow4, #ff0); }
+}
+
+/* Glitch effect for RotatingTitle (Full-Stack Developer, or when Glitch video is active) */
+.glitch-text.glitch-purple {
+  color: var(--glitch-text, #fff);
+  text-shadow:
+    0 0 8px var(--glitch-purple, #a855f7),
+    0 0 16px var(--glitch-purple, #a855f7),
+    2px 0 var(--glitch-shadow1, #f0f),
+    -2px 0 var(--glitch-shadow2, #0ff),
+    0 2px var(--glitch-shadow3, #0f0),
+    0 -2px var(--glitch-shadow4, #ff0);
+  animation: glitch-purple-colors 1.2s infinite linear alternate;
+}
+@keyframes glitch-purple-colors {
+  0% { text-shadow: 0 0 8px var(--glitch-purple, #a855f7), 0 0 16px var(--glitch-purple, #a855f7), 2px 0 var(--glitch-shadow1, #f0f), -2px 0 var(--glitch-shadow2, #0ff), 0 2px var(--glitch-shadow3, #0f0), 0 -2px var(--glitch-shadow4, #ff0); }
+  20% { text-shadow: 0 0 16px var(--glitch-purple, #a855f7), 0 0 8px var(--glitch-purple, #a855f7), -2px 0 var(--glitch-shadow2, #0ff), 2px 0 var(--glitch-shadow1, #f0f), 0 -2px var(--glitch-shadow4, #ff0), 0 2px var(--glitch-shadow3, #0f0); }
+  40% { text-shadow: 0 0 24px var(--glitch-purple, #a855f7), 2px 2px var(--glitch-shadow2, #0ff), -2px -2px var(--glitch-shadow1, #f0f), 2px -2px var(--glitch-shadow4, #ff0), -2px 2px var(--glitch-shadow3, #0f0); }
+  60% { text-shadow: 0 0 0 var(--glitch-text, #fff), 0 0 0 var(--glitch-text, #fff), 0 0 0 var(--glitch-text, #fff), 0 0 0 var(--glitch-text, #fff); }
+  100% { text-shadow: 0 0 8px var(--glitch-purple, #a855f7), 0 0 16px var(--glitch-purple, #a855f7), 2px 0 var(--glitch-shadow1, #f0f), -2px 0 var(--glitch-shadow2, #0ff), 0 2px var(--glitch-shadow3, #0f0), 0 -2px var(--glitch-shadow4, #ff0); }
+}
+
+/* Coffee steam animation for Coffee Lover title */
+.coffee-steam {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 4px;
+  height: 24px;
+  pointer-events: none;
+}
+.steam {
+  display: inline-block;
+  width: 6px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(var(--steam-rgb,255,255,255),0.7) 0%, rgba(var(--steam-rgb,255,255,255),0.1) 100%);
+  opacity: 0.7;
+  margin: 0 1px;
+  animation: steam-rise 2.2s infinite ease-in-out;
+}
+.steam-1 {
+  animation-delay: 0s;
+}
+.steam-2 {
+  animation-delay: 0.7s;
+}
+.steam-3 {
+  animation-delay: 1.1s;
+}
+@keyframes steam-rise {
+  0% {
+    opacity: 0.7;
+    transform: translateY(0) scaleX(1);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(-8px) scaleX(1.1);
+  }
+  60% {
+    opacity: 0.5;
+    transform: translateY(-16px) scaleX(0.9);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-24px) scaleX(0.8);
+  }
+}
+
+/* Lightning strike effect for Developer */
+.lightning-word {
+  transition: color 0.1s, text-shadow 0.1s;
+  position: relative;
+}
+.lightning-strike {
+  color: var(--lightning, #fff700);
+  text-shadow:
+    0 0 8px var(--lightning, #fff700),
+    0 0 16px var(--lightning, #fff700),
+    0 0 32px var(--lightning, #fff700),
+    0 0 48px var(--lightning, #fff700);
+  animation: lightning-flash 0.4s linear;
+}
+@keyframes lightning-flash {
+  0% { color: var(--foreground); text-shadow: none; }
+  10% { color: var(--lightning, #fff700); text-shadow: 0 0 16px var(--lightning, #fff700), 0 0 32px var(--lightning, #fff700); }
+  30% { color: var(--foreground); text-shadow: none; }
+  50% { color: var(--lightning, #fff700); text-shadow: 0 0 32px var(--lightning, #fff700), 0 0 48px var(--lightning, #fff700); }
+  100% { color: var(--foreground); text-shadow: none; }
+}
+.lightning-emoji {
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  opacity: 0.95;
+  animation: lightning-emoji-flash 0.4s linear;
+}
+@keyframes lightning-emoji-flash {
+  0% { opacity: 0; transform: scale(0.7) translateY(10px); }
+  20% { opacity: 1; transform: scale(1.1) translateY(-2px); }
+  60% { opacity: 1; transform: scale(1) translateY(0); }
+  100% { opacity: 0; transform: scale(0.7) translateY(10px); }
+}
+
+.get-in-touch-btn {
+  box-shadow: 0 0 0 0 var(--btn-shadow1, #f472b6), 0 0 0 0 var(--btn-shadow2, #fff);
+  border-width: 2px;
+  border-color: var(--btn-border, #f472b6);
+  background: linear-gradient(90deg, rgba(var(--btn-bg1,236,72,153),0.12) 0%, rgba(var(--btn-bg2,255,255,255),0.04) 100%);
+  transition: box-shadow 0.2s, border-color 0.2s, background 0.2s, transform 0.2s, filter 0.2s;
+  filter: drop-shadow(0 0 8px var(--btn-shadow3, #a855f7)) drop-shadow(0 0 2px var(--btn-shadow2, #fff));
+}
+.get-in-touch-btn:hover, .get-in-touch-btn:focus {
+  box-shadow: 0 0 16px 2px var(--btn-shadow1, #f472b6), 0 0 4px 1px var(--btn-shadow2, #fff);
+  border-color: var(--btn-hover-border, #fff);
+  background: linear-gradient(90deg, rgba(var(--btn-bg1,236,72,153),0.25) 0%, rgba(var(--btn-bg2,255,255,255),0.08) 100%);
+  transform: scale(1.06) rotate(-1deg);
+}
+
+:root {
+  --glitch-text: #222;
+  --glitch-shadow1: #d946ef;
+  --glitch-shadow2: #06b6d4;
+  --glitch-shadow3: #22d3ee;
+  --glitch-shadow4: #fde68a;
+  --glitch-purple: #a855f7;
+  --lightning: #facc15;
+  --steam-rgb: 120,120,120;
+  --btn-shadow1: #f472b6;
+  --btn-shadow2: #fff;
+  --btn-shadow3: #a855f7;
+  --btn-border: #f472b6;
+  --btn-bg1: 236,72,153;
+  --btn-bg2: 255,255,255;
+  --btn-hover-border: #222;
+}
+.dark {
+  --glitch-text: #fff;
+  --glitch-shadow1: #f0f;
+  --glitch-shadow2: #0ff;
+  --glitch-shadow3: #0f0;
+  --glitch-shadow4: #ff0;
+  --glitch-purple: #a855f7;
+  --lightning: #fff700;
+  --steam-rgb: 255,255,255;
+  --btn-shadow1: #f472b6;
+  --btn-shadow2: #fff;
+  --btn-shadow3: #a855f7;
+  --btn-border: #f472b6;
+  --btn-bg1: 236,72,153;
+  --btn-bg2: 255,255,255;
+  --btn-hover-border: #fff;
+}

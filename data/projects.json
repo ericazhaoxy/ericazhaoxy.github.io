@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Mental Health Demand & Supply Analysis (Capstone)",
+    "description": "Forecasted regional mental-health service demand and compared it against provider supply to surface coverage gaps and actionable resource-planning insights. Built an end-to-end analytics workflow: data cleaning, feature engineering, time-series modeling, and stakeholder-ready visualization.",
+    "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2400&auto=format&fit=crop",
+    "link": "",
+    "tags": ["Forecasting", "Time Series", "Python", "Analytics", "Visualization"]
+  },
+  {
+    "title": "Wallet Wizard (Full-Stack Personal Finance Tracker)",
+    "description": "A full-stack budgeting and expense tracking web app with authentication, REST APIs, and a responsive UI. Built with React/Next.js, Node.js, and PostgreSQL; designed to help users monitor spending and build better financial habits.",
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2400&auto=format&fit=crop",
+    "link": "https://github.com/ericazhaoxy/wallet-wizard",
+    "tags": ["Next.js", "React", "Node.js", "PostgreSQL", "Full-Stack"]
+  },
+  {
+    "title": "Adaptive Virtual Assistant (AVA) — LLM Workflows & Evaluation",
+    "description": "Built and iterated LLM-powered workflows for an ed-tech assistant: prompt + rubric design, structured outputs, evaluation criteria, and quality analysis against real student tasks. Focused on reliability, consistency, and measurable improvements. (Project is private; details available upon request.)",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2400&auto=format&fit=crop",
+    "link": "",
+    "tags": ["LLM", "Evaluation", "Prompting", "Rubrics", "EdTech"]
+  },
+  {
+    "title": "NIH Funding Allocation Optimization (Machine Learning)",
+    "description": "Designed an ML-driven approach to support research-funding allocation decisions by modeling outcomes and optimizing trade-offs. Delivered an interpretable pipeline with clear metrics and recommendations for stakeholders.",
+    "image": "https://images.unsplash.com/photo-1580281658628-7d821b2c2b60?q=80&w=2400&auto=format&fit=crop",
+    "link": "",
+    "tags": ["Machine Learning", "Optimization", "Python", "Modeling", "Interpretability"]
+  },
+  {
+    "title": "Enterprise Security Data Pipeline (Data Engineering)",
+    "description": "Built a data pipeline to consolidate and analyze security-related datasets, enabling faster monitoring and investigation. Emphasized data quality, reproducibility, and scalable processing for downstream analytics.",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2400&auto=format&fit=crop",
+    "link": "",
+    "tags": ["Data Engineering", "Pipeline", "SQL", "Python", "Analytics"]
+  }
+]
