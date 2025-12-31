@@ -53,64 +53,64 @@ export function AutoSliderBanner() {
 		};
 	}, [glitchActive]);
 
-   return (
-     <div className="relative top-0 left-0 w-screen h-screen z-0 overflow-hidden">
-       {videos.map((src, index) => (
-         <video
-           key={src}
-           className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
-             index === currentIndex ? "opacity-100" : "opacity-0"
-           }`}
-           autoPlay
-           loop
-           muted
-           playsInline
-           poster="/placeholder.jpg"
-         >
-           <source src={src} type="video/mp4" />
-           Your browser does not support the video tag.
-         </video>
-       ))}
+  return (
+    <div className="relative top-0 left-0 w-screen h-screen z-0 overflow-hidden">
+      {videos.map((src, index) => (
+        <video
+          key={src}
+          className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            index === currentIndex ? "opacity-100" : "opacity-0"
+          }`}
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/placeholder.jpg"
+        >
+          <source src={src} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ))}
 
-       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-white/10 to-white/80 dark:from-black/80 dark:via-black/10 dark:to-black/80 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-white/10 to-white/80 dark:from-black/80 dark:via-black/10 dark:to-black/80 z-10" />
 
-       <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full z-20">
-         {/* Navbar (avatar, name, rotating title) */}
-         <ProfileHeader glitchActive={glitchActive} />
+      <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full z-20">
+        {/* Navbar (avatar, name, rotating title) */}
+        <ProfileHeader glitchActive={glitchActive} />
 
-         {/* Subtitle/description (排版：两行、第二行更轻更小) */}
-         <p className="mx-auto max-w-[46rem] text-base md:text-lg leading-relaxed md:leading-8 text-white/75 mb-8 px-6 text-center">
-           Building full-stack experiences and agentic AI systems that deliver dependable intelligence, beautifully integrated.
-           <span className="block mt-2 text-sm md:text-base tracking-wide text-white/60">
-             Fueled by curiosity, precision, and elegance.
-           </span>
-         </p>
+        {/* Subtitle/description (排版：两行、第二行更轻更小) */}
+        <p className="mx-auto max-w-[46rem] text-base md:text-lg leading-relaxed md:leading-8 text-white/75 mb-8 px-6 text-center">
+          Building full-stack experiences and agentic AI systems that deliver dependable intelligence, beautifully integrated.
+          <span className="block mt-2 text-sm md:text-base tracking-wide text-white/60">
+            Fueled by curiosity, precision, and elegance.
+          </span>
+        </p>
 
-         <div className="flex justify-center gap-4 mb-8 px-4 md:px-0">
-           <a href="#projects">
-             <Button
-               size="lg"
-               className="bg-gray-900 text-white border border-gray-900 shadow-lg hover:bg-white hover:text-gray-900 hover:border-gray-300 focus:bg-white focus:text-gray-900 focus:border-gray-300 active:bg-gray-800 active:text-white active:border-gray-800 transition-colors duration-200"
-             >
-               View Projects <span className="ml-2">↓</span>
-             </Button>
-           </a>
+        <div className="flex justify-center gap-4 mb-8 px-4 md:px-0">
+          <a href="#projects">
+            <Button
+              size="lg"
+              className="bg-gray-900 text-white border border-gray-900 shadow-lg hover:bg-white hover:text-gray-900 hover:border-gray-300 focus:bg-white focus:text-gray-900 focus:border-gray-300 active:bg-gray-800 active:text-white active:border-gray-800 transition-colors duration-200"
+            >
+              View Projects <span className="ml-2">↓</span>
+            </Button>
+          </a>
 
-           <a href="#contact">
-             <Button
-               ref={getInTouchBtnRef}
-               size="lg"
-               variant="outline"
-               className={`border-pink-400 text-pink-400 hover:bg-pink-400/10 transition-all duration-200 ${
-                 glitchActive ? "get-in-touch-btn" : ""
-               }`}
-             >
-               Get in Touch
-             </Button>
-           </a>
-         </div>
+          <a href="#contact">
+            <Button
+              ref={getInTouchBtnRef}
+              size="lg"
+              variant="outline"
+              className={`border-pink-400 text-pink-400 hover:bg-pink-400/10 transition-all duration-200 ${
+                glitchActive ? "get-in-touch-btn" : ""
+              }`}
+            >
+              Get in Touch
+            </Button>
+          </a>
+        </div>
 
-         <SocialLinks />
-       </div>
-     </div>
-   )
+        <SocialLinks />
+      </div>
+    </div>
+  )
