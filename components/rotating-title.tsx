@@ -2,9 +2,9 @@ import { useState, useEffect, useRef } from "react"
 import gsap from "gsap"
 
 const roles = [
-  "Artificial Intelligence Engineer",
+  "AI Engineer",
   "Machine Learning Engineer",
-  "Applied Data Scientist",
+  "Data Scientist",
   "Full-Stack Developer",
   "Entrepreneur",
   "Multilingual Storyteller",
