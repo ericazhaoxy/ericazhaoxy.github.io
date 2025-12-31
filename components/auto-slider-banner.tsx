@@ -76,9 +76,11 @@ export function AutoSliderBanner() {
 				{/* Navbar (avatar, name, rotating title) */}
 				<ProfileHeader glitchActive={glitchActive} />
 				{/* Subtitle/description */}
-				<p className="mx-auto max-w-2xl text-xl text-gray-300 mb-8 px-4 text-center">
+				<p className="mx-auto max-w-[46rem] text-base md:text-lg leading-relaxed md:leading-8 text-white/75 mb-8 px-6 text-center">
 					Building full-stack experiences and agentic AI systems that deliver dependable intelligence, beautifully integrated.
-					Fueled by curiosity, precision, and elegance.
+					<span className="block mt-2 text-sm md:text-base tracking-wide text-white/60"></span>
+					  Fueled by curiosity, precision, and elegance.
+					</span>
 				</p>
 				<div className="flex justify-center gap-4 mb-8 px-4 md:px-0">
 					<a href="#projects">
