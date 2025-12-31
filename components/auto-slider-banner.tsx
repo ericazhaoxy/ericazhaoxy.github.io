@@ -77,8 +77,8 @@ export function AutoSliderBanner() {
 				<ProfileHeader glitchActive={glitchActive} />
 				{/* Subtitle/description */}
 				<p className="mx-auto max-w-2xl text-xl text-gray-300 mb-8 px-4 text-center">
-					Building full-stack experiences and agentic AI systems that tame messy problems and delight users.
-					Fueled by curiosity, strong coffee, and dad-level perseverence.
+					Building full-stack experiences and agentic AI systems that deliver dependable intelligence, beautifully integrated.
+					Fueled by curiosity, precision, and elegance.
 				</p>
 				<div className="flex justify-center gap-4 mb-8 px-4 md:px-0">
 					<a href="#projects">

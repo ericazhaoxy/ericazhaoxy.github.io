@@ -7,7 +7,6 @@ const roles = [
 	"Technical Storyteller",
 	"Applied AI Engineer",
 	"Startup Advisor",
-	"Dad",
 	"Coffee Lover",
 	"Lifelong Learner",
 ]
