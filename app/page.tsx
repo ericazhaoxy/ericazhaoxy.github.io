@@ -97,15 +97,6 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Stealth Startup Work Placeholder */}
-        <section id="stealth" className="py-16 md:py-24 px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-teal-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">Stealth Startup Work</h2>
-          <div className="max-w-2xl mx-auto text-center text-muted-foreground">
-            <p className="mb-4">Details about my work on stealth and early-stage startups will be shared here (as much as I can reveal!).</p>
-            <div className="h-20 bg-muted rounded-xl flex items-center justify-center text-lg font-semibold text-muted-foreground/70">[Stealth Startup Placeholder]</div>
-          </div>
-        </section>
-
         {/* Contact Section */}
         <section id="contact" className="py-20 md:py-32 px-4 md:px-8">
           <div className="mx-auto max-w-2xl">

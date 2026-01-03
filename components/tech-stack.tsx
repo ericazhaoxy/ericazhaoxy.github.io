@@ -388,13 +388,6 @@ export function PortfolioPlaceholders() {
 					A curated list of my published blog posts and articles is coming soon.
 				</p>
 			</section>
-			<section>
-				<h2 className="text-xl font-bold mb-2">Stealth Startup Work</h2>
-				<p className="text-muted-foreground">
-					Details about my recent stealth startup projects will appear here when
-					public.
-				</p>
-			</section>
 		</div>
 	)
 }
