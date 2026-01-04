@@ -1,45 +1,51 @@
-"use client"
+"use client";
 
-import ContactForm from "../components/contact-form"
-import TechStack from "../components/tech-stack"
-import { AutoSliderBanner } from "@/components/auto-slider-banner"
-import { useEffect, useState } from "react"
-import { useSplashComplete } from "./layout"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { ProjectStack } from "@/components/project-stack"
-import { AboutSection } from "../components/about-section"
-import { ChevronUp } from "lucide-react"
-import writing from "@/data/writing.json"
-import Link from "next/link"
-
+import ContactForm from "../components/contact-form";
+import TechStack from "../components/tech-stack";
+import { AutoSliderBanner } from "@/components/auto-slider-banner";
+import { useEffect, useState } from "react";
+import { useSplashComplete } from "./layout";
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { ProjectStack } from "@/components/project-stack";
+import { AboutSection } from "../components/about-section";
+import { ChevronUp } from "lucide-react";
+import writing from "@/data/writing.json";
+import Link from "next/link";
 
 export default function Page() {
-  const [navTransparent, setNavTransparent] = useState(true)
-  const [mobileNavOpen, setMobileNavOpen] = useState(false)
-  const [showTOS, setShowTOS] = useState(false)
-  const [showPrivacy, setShowPrivacy] = useState(false)
-  const [headerVisible, setHeaderVisible] = useState(false)
-  const [showBackToTop, setShowBackToTop] = useState(false)
-  const splashComplete = useSplashComplete()
+  const [navTransparent, setNavTransparent] = useState(true);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [showTOS, setShowTOS] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const [headerVisible, setHeaderVisible] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
+  const splashComplete = useSplashComplete();
+  const writingPosts = ((writing as any)?.posts ??
+    (writing as any) ??
+    []) as Array<{
+    title: string;
+    url: string;
+    tag?: string;
+  }>;
 
   useEffect(() => {
     if (!splashComplete) return;
     const onScroll = () => {
-      setNavTransparent(window.scrollY < 10)
-      setShowBackToTop(window.scrollY > 3000)
-    }
-    window.addEventListener("scroll", onScroll)
-    onScroll()
-    let timer: NodeJS.Timeout | null = null
+      setNavTransparent(window.scrollY < 10);
+      setShowBackToTop(window.scrollY > 3000);
+    };
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+    let timer: NodeJS.Timeout | null = null;
     requestAnimationFrame(() => {
-      timer = setTimeout(() => setHeaderVisible(true), 1500)
-    })
+      timer = setTimeout(() => setHeaderVisible(true), 1500);
+    });
     return () => {
-      window.removeEventListener("scroll", onScroll)
-      if (timer) clearTimeout(timer)
-    }
-  }, [splashComplete])
+      window.removeEventListener("scroll", onScroll);
+      if (timer) clearTimeout(timer);
+    };
+  }, [splashComplete]);
 
   return (
     <div className="min-h-screen bg-background relative">
@@ -57,44 +63,93 @@ export default function Page() {
         {/* About Section */}
         <AboutSection />
         {/* Projects Section */}
-        <section id="projects" className="w-full py-20 md:py-32 relative px-4 md:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center text-gradient bg-gradient-to-r from-purple-400 via-teal-400 to-pink-400 bg-clip-text text-transparent">Projects</h2>
+        <section
+          id="projects"
+          className="w-full py-20 md:py-32 relative px-4 md:px-8"
+        >
+          <h2 className="text-4xl font-bold mb-12 text-center text-gradient bg-gradient-to-r from-purple-400 via-teal-400 to-pink-400 bg-clip-text text-transparent">
+            Projects
+          </h2>
           <ProjectStack />
         </section>
 
         {/* Tech Stack Section */}
-        <section id="tech" className="py-20 md:py-32 bg-gradient-to-b from-background to-purple-950/30 rounded-xl my-12 px-4 md:px-8">
-          <h2 className="text-4xl font-bold mb-12 text-center text-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">Tech Stack</h2>
+        <section
+          id="tech"
+          className="py-20 md:py-32 bg-gradient-to-b from-background to-purple-950/30 rounded-xl my-12 px-4 md:px-8"
+        >
+          <h2 className="text-4xl font-bold mb-12 text-center text-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">
+            Tech Stack
+          </h2>
           <TechStack />
         </section>
 
         {/* Education */}
         <section id="education" className="py-16 md:py-24 px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-teal-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Global Education Journey</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-teal-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+            Global Education Journey
+          </h2>
           <div className="max-w-2xl mx-auto text-center text-muted-foreground">
-            <p className="mb-4">Coming soon: A visual timeline of my education journey, schools, and key milestones.</p>
-            <div className="h-24 bg-muted rounded-xl flex items-center justify-center text-lg font-semibold text-muted-foreground/70">[Timeline Placeholder]</div>
+            <p className="mb-4">
+              Coming soon: A visual timeline of my education journey, schools,
+              and key milestones.
+            </p>
+            <div className="h-24 bg-muted rounded-xl flex items-center justify-center text-lg font-semibold text-muted-foreground/70">
+              [Timeline Placeholder]
+            </div>
           </div>
         </section>
 
         {/* Writing Section */}
-        <section id="writing" className="py-16 md:py-24 px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-pink-400 via-teal-400 to-purple-400 bg-clip-text text-transparent">Writing</h2>
+        <section
+          id="writing"
+          className="py-16 md:py-24 px-4 md:px-8 relative z-10"
+        >
+          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-pink-400 via-teal-400 to-purple-400 bg-clip-text text-transparent">
+            Writing
+          </h2>
           <div className="max-w-2xl mx-auto text-center text-muted-foreground">
-            <p className="mb-4">Short notes + longer essays from building and events.</p>
-            <ul className="space-y-2">
-              <li className="bg-muted rounded px-4 py-2 text-muted-foreground/70">[Writing Placeholder]</li>
-            </ul>
+            <p className="mb-8">
+              Short notes + longer essays from building and events.
+            </p>
+
+            <div className="grid gap-3 text-left">
+              {(writingPosts ?? []).map((post) => (
+                <Link
+                  key={post.url}
+                  href={post.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  prefetch={false}
+                  className="block rounded-xl border border-border bg-muted/40 px-6 py-5 transition hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring pointer-events-auto"
+                >
+                  <div className="text-lg font-semibold text-foreground">
+                    {post.title}
+                  </div>
+                  {post.tag ? (
+                    <div className="mt-1 text-sm text-muted-foreground">
+                      {post.tag}
+                    </div>
+                  ) : null}
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* Events Placeholder */}
         <section id="events" className="py-16 md:py-24 px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">Events & Volunteering</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">
+            Events & Volunteering
+          </h2>
           <div className="max-w-2xl mx-auto text-center text-muted-foreground">
-            <p className="mb-4">Photos + short notes from tech events and volunteering.</p>
+            <p className="mb-4">
+              Photos + short notes from tech events and volunteering.
+            </p>
             <ul className="space-y-2">
-              <li className="bg-muted rounded px-4 py-2 text-muted-foreground/70">[Events Placeholder]</li>
+              <li className="bg-muted rounded px-4 py-2 text-muted-foreground/70">
+                [Events Placeholder]
+              </li>
             </ul>
           </div>
         </section>
@@ -102,7 +157,9 @@ export default function Page() {
         {/* Contact Section */}
         <section id="contact" className="py-20 md:py-32 px-4 md:px-8">
           <div className="mx-auto max-w-2xl">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gradient bg-gradient-to-r from-purple-400 via-teal-400 to-pink-400 bg-clip-text text-transparent">Get in Touch</h2>
+            <h2 className="text-4xl font-bold mb-12 text-center text-gradient bg-gradient-to-r from-purple-400 via-teal-400 to-pink-400 bg-clip-text text-transparent">
+              Get in Touch
+            </h2>
             <ContactForm />
           </div>
         </section>
@@ -116,7 +173,6 @@ export default function Page() {
         >
           <ChevronUp className="h-7 w-7" />
         </button>
-        
       )}
       <Footer
         setShowTOS={setShowTOS}
@@ -125,5 +181,5 @@ export default function Page() {
         showPrivacy={showPrivacy}
       />
     </div>
-  )
+  );
 }

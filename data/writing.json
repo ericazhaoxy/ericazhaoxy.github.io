@@ -1,14 +1,16 @@
-[
-  {
-    "title": "New Year, New Record",
-    "description": "A fresh start, a public record, and the beginning of building in the open.",
-    "link": "https://ericazhaoxy.substack.com/p/new-year-new-record",
-    "tags": ["Substack", "Personal IP", "Build in public"]
-  },
-  {
-    "title": "A Builder’s Notebook",
-    "description": "Notes from shipping: systems, taste, and the craft of making things that work.",
-    "link": "https://ericazhaoxy.substack.com/p/a-builders-notebook",
-    "tags": ["Substack", "AI", "Product", "Engineering"]
-  }
-]
+{
+  "posts": [
+    {
+      "title": "New Year, New Record",
+      "description": "A fresh start, a public record, and the beginning of building in the open.",
+      "url": "https://ericazhaoxy.substack.com/p/new-year-new-record",
+      "tags": ["Substack", "Personal IP", "Build in public"]
+    },
+    {
+      "title": "A Builder’s Notebook",
+      "description": "Notes from shipping: systems, taste, and the craft of making things that work.",
+      "url": "https://ericazhaoxy.substack.com/p/a-builders-notebook",
+      "tags": ["Substack", "AI", "Product", "Engineering"]
+    }
+  ]
+}
