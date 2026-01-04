@@ -24,7 +24,7 @@
     "title": "NIH Funding Allocation Optimization (Machine Learning)",
     "description": "Designed an ML-driven approach to support research-funding allocation decisions by modeling outcomes and optimizing trade-offs. Delivered an interpretable pipeline with clear metrics and recommendations for stakeholders.",
     "image": "https://images.unsplash.com/photo-1580281658628-7d821b2c2b60?q=80&w=2400&auto=format&fit=crop",
-    "link": "",
+    "link": "https://github.com/ericazhaoxy/nih-grant-activity-classifier",
     "tags": ["Machine Learning", "Optimization", "Python", "Modeling", "Interpretability"]
   },
   {
