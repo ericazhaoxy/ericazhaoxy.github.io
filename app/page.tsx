@@ -10,6 +10,8 @@ import { Footer } from "@/components/footer"
 import { ProjectStack } from "@/components/project-stack"
 import { AboutSection } from "../components/about-section"
 import { ChevronUp } from "lucide-react"
+import writing from "@/data/writing.json"
+import Link from "next/link"
 
 
 export default function Page() {
@@ -66,33 +68,33 @@ export default function Page() {
           <TechStack />
         </section>
 
-        {/* Career Timeline Placeholder */}
-        <section id="career-timeline" className="py-16 md:py-24 px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-teal-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Career Timeline</h2>
+        {/* Education */}
+        <section id="education" className="py-16 md:py-24 px-4 md:px-8">
+          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-teal-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Global Education Journey</h2>
           <div className="max-w-2xl mx-auto text-center text-muted-foreground">
-            <p className="mb-4">Coming soon: A visual timeline of my career journey, roles, and key milestones.</p>
+            <p className="mb-4">Coming soon: A visual timeline of my education journey, schools, and key milestones.</p>
             <div className="h-24 bg-muted rounded-xl flex items-center justify-center text-lg font-semibold text-muted-foreground/70">[Timeline Placeholder]</div>
           </div>
         </section>
 
-        {/* Speaking Engagements Placeholder */}
-        <section id="speaking" className="py-16 md:py-24 px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-pink-400 via-teal-400 to-purple-400 bg-clip-text text-transparent">Speaking Engagements</h2>
+        {/* Writing Section */}
+        <section id="writing" className="py-16 md:py-24 px-4 md:px-8">
+          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-pink-400 via-teal-400 to-purple-400 bg-clip-text text-transparent">Writing</h2>
           <div className="max-w-2xl mx-auto text-center text-muted-foreground">
-            <p className="mb-4">Talks, workshops, and panels at conferences and meetups will be listed here.</p>
+            <p className="mb-4">Short notes + longer essays from building and events.</p>
             <ul className="space-y-2">
-              <li className="bg-muted rounded px-4 py-2 text-muted-foreground/70">[Conference/Workshop Placeholder]</li>
+              <li className="bg-muted rounded px-4 py-2 text-muted-foreground/70">[Writing Placeholder]</li>
             </ul>
           </div>
         </section>
 
-        {/* Blogs Published Placeholder */}
-        <section id="blogs" className="py-16 md:py-24 px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">Blogs Published</h2>
+        {/* Events Placeholder */}
+        <section id="events" className="py-16 md:py-24 px-4 md:px-8">
+          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">Events & Volunteering</h2>
           <div className="max-w-2xl mx-auto text-center text-muted-foreground">
-            <p className="mb-4">A curated list of my published blog posts and articles will appear here.</p>
+            <p className="mb-4">Photos + short notes from tech events and volunteering.</p>
             <ul className="space-y-2">
-              <li className="bg-muted rounded px-4 py-2 text-muted-foreground/70">[Blog Post Placeholder]</li>
+              <li className="bg-muted rounded px-4 py-2 text-muted-foreground/70">[Events Placeholder]</li>
             </ul>
           </div>
         </section>
