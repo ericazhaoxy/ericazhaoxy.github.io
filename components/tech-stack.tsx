@@ -47,8 +47,6 @@ const techStack = [
       "PostgreSQL",
       "Redis",
       "SQL",
-      "SQL Server",
-      "SQLite",
     ].sort(),
   },
   {
@@ -103,7 +101,6 @@ const techStack = [
     title: "Cloud & Hosting",
     items: [
       "AWS",
-      "Azure App Service",
       "GCP",
       "Microsoft Azure",
       "Render",
@@ -112,17 +109,16 @@ const techStack = [
     ].sort(),
   },
   {
-    title: "Design & Visualization",
+    title: "BI & Visualization",
     items: [
-      "Chart.js",
-      "D3.js",
+      "Tableau",
+      "Power BI",
+      "Plotly",
+      "Dash",
       "Figma",
       "Matplotlib",
-      "Plotly",
-      "Power BI",
-      "React Flow",
+      "Seaborn",
       "Streamlit",
-      "WordPress",
     ].sort(),
   },
   {
