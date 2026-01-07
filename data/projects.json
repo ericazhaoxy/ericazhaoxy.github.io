@@ -4,7 +4,13 @@
     "description": "Forecasted regional mental-health service demand and compared it against provider supply to surface coverage gaps and actionable resource-planning insights. Built an end-to-end analytics workflow: data cleaning, feature engineering, time-series modeling, and stakeholder-ready visualization.",
     "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2400&auto=format&fit=crop",
     "link": "",
-    "tags": ["Forecasting", "Time Series", "Python", "Analytics", "Visualization"]
+    "tags": [
+      "Forecasting",
+      "Time Series",
+      "Python",
+      "Analytics",
+      "Visualization"
+    ]
   },
   {
     "title": "Wallet Wizard (Full-Stack Personal Finance Tracker)",
@@ -21,11 +27,17 @@
     "tags": ["LLM", "Evaluation", "Prompting", "Rubrics", "EdTech"]
   },
   {
-    "title": "NIH Funding Allocation Optimization (Machine Learning)",
-    "description": "Designed an ML-driven approach to support research-funding allocation decisions by modeling outcomes and optimizing trade-offs. Delivered an interpretable pipeline with clear metrics and recommendations for stakeholders.",
+    "title": "NIH Grant Activity Classifier (Machine Learning)",
+    "description": "Trained a multi-class model to predict NIH grant activity series (F/T/K/R) from structured award signals using public NIH RePORTER data (FY2018–FY2023, 118k+ records). Best baseline achieved ~0.93 macro-F1 on validation.",
     "image": "https://images.unsplash.com/photo-1580281658628-7d821b2c2b60?q=80&w=2400&auto=format&fit=crop",
     "link": "https://github.com/ericazhaoxy/nih-grant-activity-classifier",
-    "tags": ["Machine Learning", "Optimization", "Python", "Modeling", "Interpretability"]
+    "tags": [
+      "Machine Learning",
+      "Classification",
+      "scikit-learn",
+      "Python",
+      "Data Pipeline"
+    ]
   },
   {
     "title": "Enterprise Security Data Pipeline (Data Engineering)",
