@@ -1,33 +1,41 @@
-import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Github } from "lucide-react"
-import Link from "next/link"
-import { useState } from "react"
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { Github } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  image: string
-  link: string
-  tags: string[]
+  title: string;
+  subtitle?: string;
+  description: string;
+  image: string;
+  link: string;
+  tags: string[];
 }
 
-export default function ProjectCard({ title, description, image, link, tags }: ProjectCardProps) {
-  const [imgSrc, setImgSrc] = useState(image || "/placeholder.svg")
-  const [retries, setRetries] = useState(0)
-  const [loading, setLoading] = useState(true)
-  const maxRetries = 2
+export default function ProjectCard({
+  title,
+  subtitle,
+  description,
+  image,
+  link,
+  tags,
+}: ProjectCardProps) {
+  const [imgSrc, setImgSrc] = useState(image || "/placeholder.svg");
+  const [retries, setRetries] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const maxRetries = 2;
 
   const handleError = () => {
     if (retries < maxRetries) {
-      setRetries(retries + 1)
-      setImgSrc(`${image}?retry=${retries + 1}`)
+      setRetries(retries + 1);
+      setImgSrc(`${image}?retry=${retries + 1}`);
     } else {
-      setImgSrc("/placeholder.svg")
-      setLoading(false)
+      setImgSrc("/placeholder.svg");
+      setLoading(false);
     }
-  }
+  };
 
-  const handleLoad = () => setLoading(false)
+  const handleLoad = () => setLoading(false);
 
   return (
     <Card className="overflow-hidden h-full flex flex-col">
@@ -43,12 +51,17 @@ export default function ProjectCard({ title, description, image, link, tags }: P
           loading="lazy"
           onError={handleError}
           onLoad={handleLoad}
-          className={`object-cover w-full h-full transition-transform hover:scale-105 ${loading ? "opacity-0" : "opacity-100"}`}
-          style={{ aspectRatio: '16/9', height: '100%', width: '100%' }}
+          className={`object-cover w-full h-full transition-transform hover:scale-105 ${
+            loading ? "opacity-0" : "opacity-100"
+          }`}
+          style={{ aspectRatio: "16/9", height: "100%", width: "100%" }}
         />
       </div>
       <CardContent className="p-4 flex-1 flex flex-col">
         <h3 className="font-semibold text-xl mb-2">{title}</h3>
+        {subtitle ? (
+          <div className="text-sm text-muted-foreground mb-2">{subtitle}</div>
+        ) : null}
         <p className="text-sm text-muted-foreground mb-4">{description}</p>
         <div className="flex-1" />
         <div className="flex flex-wrap gap-2 mt-2">
@@ -64,7 +77,11 @@ export default function ProjectCard({ title, description, image, link, tags }: P
       </CardContent>
       <CardFooter className="p-4 pt-0 mt-auto">
         {link ? (
-          <Link href={link} target="_blank" className="inline-flex items-center gap-2 text-sm hover:underline">
+          <Link
+            href={link}
+            target="_blank"
+            className="inline-flex items-center gap-2 text-sm hover:underline"
+          >
             <Github className="h-4 w-4" />
             View on GitHub
           </Link>
@@ -76,5 +93,5 @@ export default function ProjectCard({ title, description, image, link, tags }: P
         )}
       </CardFooter>
     </Card>
-  )
+  );
 }
