@@ -27,7 +27,7 @@
     "tags": ["LLM", "Evaluation", "Prompting", "Rubrics", "EdTech"]
   },
   {
-    "title": "NIH Grant Activity Classifier (Machine Learning)",
+    "title": "NIH Grant Activity Classifier",
     "description": "Trained a multi-class model to predict NIH grant activity series (F/T/K/R) from structured award signals using public NIH RePORTER data (FY2018–FY2023, 118k+ records). Best baseline achieved ~0.93 macro-F1 on validation.",
     "image": "/nih-grant-activity-cover.jpg",
     "link": "https://github.com/ericazhaoxy/nih-grant-activity-classifier",
