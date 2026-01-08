@@ -32,7 +32,13 @@
     "description": "Trained a multi-class model to predict NIH grant activity series (F/T/K/R) from structured award signals using public NIH RePORTER data (FY2018–FY2023, 118k+ records). Best baseline achieved ~0.93 macro-F1 on validation.",
     "image": "/nih-grant-activity-cover.jpg",
     "link": "https://github.com/ericazhaoxy/nih-grant-activity-classifier",
-    "tags": ["Classification", "scikit-learn", "Python", "Data Pipeline"]
+    "tags": [
+      "Classification",
+      "scikit-learn",
+      "pandas",
+      "GridSearchCV",
+      "Gradient Boosting"
+    ]
   },
   {
     "title": "Enterprise Security Data Pipeline",
@@ -40,6 +46,6 @@
     "description": "Built a data pipeline to consolidate and analyze security-related datasets, enabling faster monitoring and investigation. Emphasized data quality, reproducibility, and scalable processing for downstream analytics.",
     "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2400&auto=format&fit=crop",
     "link": "https://github.com/ericazhaoxy/Data-Management-Package-Set",
-    "tags": ["Data Engineering", "Pipeline", "SQL", "Python", "Analytics"]
+    "tags": ["ETL", "Pipelines", "SQL", "Python", "Data Quality", "Monitoring"]
   }
 ]
