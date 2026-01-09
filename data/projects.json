@@ -1,14 +1,16 @@
 [
   {
-    "title": "Mental Health Demand & Supply Analysis (Capstone)",
-    "description": "Forecasted regional mental-health service demand and compared it against provider supply to surface coverage gaps and actionable resource-planning insights. Built an end-to-end analytics workflow: data cleaning, feature engineering, time-series modeling, and stakeholder-ready visualization.",
+    "title": "GapSight Health — Mental Health Demand-Supply Gap Monitor",
+    "subtitle": "Public Health Analytics",
+    "description": "FA data-to-dashboard system that tracks mental health demand signals vs provider capacity across U.S. states (2020–2024). Interpretable ML highlights where gaps are largest and what factors drive them.",
     "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2400&auto=format&fit=crop",
-    "link": "",
+    "link": "https://github.com/ericazhaoxy/GapSight-Health",
     "tags": [
-      "Forecasting",
+      "Interpretable ML",
       "Time Series",
       "Python",
-      "Analytics",
+      "XGBoost",
+      "Dashboard",
       "Visualization"
     ]
   },
