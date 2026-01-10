@@ -1,5 +1,12 @@
 [
   {
+    "title": "Adaptive Virtual Assistant (AVA) — LLM Workflows & Evaluation",
+    "description": "Built and iterated LLM-powered workflows for an ed-tech assistant: prompt + rubric design, structured outputs, evaluation criteria, and quality analysis against real student tasks. Focused on reliability, consistency, and measurable improvements. (Project is private; details available upon request.)",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2400&auto=format&fit=crop",
+    "link": "",
+    "tags": ["LLM", "Evaluation", "Prompting", "Rubrics", "EdTech"]
+  },
+  {
     "title": "GapSight Health — Mental Health Demand-Supply Gap Monitor",
     "subtitle": "Public Health Analytics",
     "description": "A data-to-dashboard system that tracks mental health demand signals vs provider capacity across U.S. states (2020–2024). Interpretable ML highlights where gaps are largest and what factors drive them.",
@@ -21,13 +28,6 @@
     "image": "/wallet-wizard-cover.jpg",
     "link": "https://github.com/ericazhaoxy/Wallet-Wizard-Insights",
     "tags": ["Next.js", "React", "Node.js", "PostgreSQL", "REST API", "Auth"]
-  },
-  {
-    "title": "Adaptive Virtual Assistant (AVA) — LLM Workflows & Evaluation",
-    "description": "Built and iterated LLM-powered workflows for an ed-tech assistant: prompt + rubric design, structured outputs, evaluation criteria, and quality analysis against real student tasks. Focused on reliability, consistency, and measurable improvements. (Project is private; details available upon request.)",
-    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2400&auto=format&fit=crop",
-    "link": "",
-    "tags": ["LLM", "Evaluation", "Prompting", "Rubrics", "EdTech"]
   },
   {
     "title": "NIH Grant Activity Classifier",
