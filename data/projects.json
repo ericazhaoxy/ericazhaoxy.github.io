@@ -18,7 +18,7 @@
     "title": "Wallet Wizard - Personal Finance Tracker",
     "subtitle": "Full-Stack Web Development",
     "description": "Full-stack personal finance web app with authentication, CRUD budgets/transactions, and a REST API. Built a responsive dashboard in Next.js/React, backed by Node.js services and PostgreSQL for reliable expense tracking and monthly budgeting.",
-    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2400&auto=format&fit=crop",
+    "image": "/wallet-wizard-cover.jpg",
     "link": "https://github.com/ericazhaoxy/Wallet-Wizard-Insights",
     "tags": ["Next.js", "React", "Node.js", "PostgreSQL", "REST API", "Auth"]
   },
