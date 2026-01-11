@@ -47,7 +47,7 @@
     "title": "Test Data Refresh Pipeline",
     "subtitle": "Data Engineering",
     "description": "Built a data pipeline to consolidate and analyze security-related datasets, enabling faster monitoring and investigation. Emphasized data quality, reproducibility, and scalable processing for downstream analytics.",
-    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2400&auto=format&fit=crop",
+    "image": "/test-data-refresh-pipeline.jpg",
     "link": "https://github.com/ericazhaoxy/Test-Data-Refresh-Pipeline",
     "tags": ["ETL", "Pipelines", "SQL", "Python", "Data Quality", "Monitoring"]
   }
