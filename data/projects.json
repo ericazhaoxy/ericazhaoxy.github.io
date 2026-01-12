@@ -2,7 +2,7 @@
   {
     "title": "Adaptive Virtual Assistant (AVA) — LLM Workflows & Evaluation",
     "description": "Built and iterated LLM-powered workflows for an ed-tech assistant: prompt + rubric design, structured outputs, evaluation criteria, and quality analysis against real student tasks. Focused on reliability, consistency, and measurable improvements. (Project is private; details available upon request.)",
-    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2400&auto=format&fit=crop",
+    "image": "/adaptive_virtual_assistant.jpg",
     "link": "",
     "tags": ["LLM", "Evaluation", "Prompting", "Rubrics", "EdTech"]
   },
