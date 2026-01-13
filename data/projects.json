@@ -1,8 +1,8 @@
 [
   {
-    "title": "Adaptive AI Assistant (AVA)",
+    "title": "Adaptive AI Assistant (Mety)",
     "subtitle": "AI • Prompt Engineering • Evaluation",
-    "description": "Built and iterated LLM-powered workflows for an ed-tech assistant: prompt + rubric design, structured outputs, evaluation criteria, and quality analysis against real student tasks. Focused on reliability, consistency, and measurable improvements. (Project is private.)",
+    "description": "Built and iterated LLM-powered workflows for an ed-tech assistant: prompt + rubric design, structured outputs, evaluation criteria, and quality analysis against real student tasks. Focused on reliability, consistency, and measurable improvements. (Company project; details are confidential.)",
     "image": "/adaptive_virtual_assistant.jpg",
     "link": "",
     "tags": ["LLM", "Evaluation", "Prompting", "Rubrics", "EdTech"]
