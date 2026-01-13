@@ -54,7 +54,7 @@
   {
     "title": "EdTech Support Chatbot",
     "subtitle": "NLP • LLMs • Systems",
-    "description": "Built a modular student-support chatbot (easy → advanced) for common EdTech Q&A. Implemented an NLTK rule-based baseline, an intent-classification pipeline, and an LLM prototype, comparing tradeoffs in reliability, latency, and maintainability. Documented a modern upgrade path from GPT-2-era prototypes to today's stronger LLMs with guardrails.",
+    "description": "Built a modular EdTech support chatbot (easy → advanced): NLTK rules, intent classification, and an LLM prototype. Compared reliability/latency/maintainability tradeoffs and documented an upgrade path from GPT-2-era prototypes to modern LLMs with guardrails.",
     "image": "/edtech_support_chatbot.jpg",
     "link": "https://github.com/ericazhaoxy/EdTech-Support-Chatbot",
     "tags": [
