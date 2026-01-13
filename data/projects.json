@@ -2,15 +2,22 @@
   {
     "title": "Adaptive AI Assistant (Mety)",
     "subtitle": "AI • Prompt Engineering • Evaluation",
-    "description": "Built and iterated LLM-powered workflows for an ed-tech assistant: prompt + rubric design, structured outputs, evaluation criteria, and quality analysis against real student tasks. Focused on reliability, consistency, and measurable improvements. (Company project; details are confidential.)",
+    "description": "Built and iterated LLM-powered workflows for leaning assistant: prompt + rubric design, structured outputs, evaluation criteria, and quality analysis against real user tasks. Focused on reliability, consistency, and measurable improvements. (Company project; details are confidential.)",
     "image": "/adaptive_virtual_assistant.jpg",
     "link": "",
-    "tags": ["LLM", "Evaluation", "Prompting", "Rubrics", "EdTech"]
+    "tags": [
+      "LLMs",
+      "Prompting",
+      "Knowledge Bases",
+      "Fine-tuning",
+      "AI Workflows",
+      "Evaluation"
+    ]
   },
   {
     "title": "Mental Health Demand-Supply Gap Monitor",
     "subtitle": "Machine Learning • Dashboard",
-    "description": "A data-to-dashboard system that tracks mental health demand signals vs provider capacity across U.S. states (2020–2024). Interpretable ML highlights where gaps are largest and what factors drive them.",
+    "description": "A data-to-dashboard system that tracks mental health demand signals vs provider capacity across U.S. states (2020-2024). Interpretable ML highlights where gaps are largest and what factors drive them.",
     "image": "/gapsight-health.jpg",
     "link": "https://github.com/ericazhaoxy/GapSight-Health",
     "tags": [
