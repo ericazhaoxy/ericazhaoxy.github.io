@@ -17,12 +17,12 @@
   {
     "title": "Mental Health Demand-Supply Gap Monitor",
     "subtitle": "Machine Learning • Dashboard",
-    "description": "A data-to-dashboard system that tracks mental health demand signals vs provider capacity across U.S. states (2020-2024). Interpretable ML highlights where gaps are largest and what factors drive them.",
+    "description": "An interactive data-to-dashboard system that tracks mental health demand signals vs provider capacity across U.S. states (2020-2024). Interpretable ML highlights where gaps are largest and what factors drive them.",
     "image": "/gapsight-health.jpg",
     "link": "https://github.com/ericazhaoxy/GapSight-Health",
     "tags": [
       "Interpretable ML",
-      "Time Series",
+      "Time Series Analysis",
       "Python",
       "XGBoost",
       "Dashboard",
@@ -31,11 +31,19 @@
   },
   {
     "title": "Wallet Wizard - Personal Finance Tracker",
-    "subtitle": "Full-Stack Web Development",
+    "subtitle": "Full-Stack Development",
     "description": "Full-stack personal finance web app with authentication, CRUD budgets/transactions, and a REST API. Built a responsive dashboard in Next.js/React, backed by Node.js services and PostgreSQL for reliable expense tracking and monthly budgeting.",
     "image": "/wallet-wizard-cover.jpg",
     "link": "https://github.com/ericazhaoxy/Wallet-Wizard-Insights",
-    "tags": ["Next.js", "React", "Node.js", "PostgreSQL", "REST API", "Auth"]
+    "tags": [
+      "Next.js",
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "REST API",
+      "Auth",
+      "Web App"
+    ]
   },
   {
     "title": "NIH Grant Activity Classifier",
