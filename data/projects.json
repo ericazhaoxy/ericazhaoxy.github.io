@@ -56,7 +56,8 @@
       "scikit-learn",
       "pandas",
       "GridSearchCV",
-      "Gradient Boosting"
+      "Gradient Boosting",
+      "Data Analysis"
     ]
   },
   {
@@ -65,7 +66,14 @@
     "description": "Built a data pipeline to consolidate and analyze security-related datasets, enabling faster monitoring and investigation. Emphasized data quality, reproducibility, and scalable processing for downstream analytics.",
     "image": "/test-data-refresh-pipeline.jpg",
     "link": "https://github.com/ericazhaoxy/Test-Data-Refresh-Pipeline",
-    "tags": ["ETL", "Pipelines", "SQL", "Python", "Data Quality", "Monitoring"]
+    "tags": [
+      "ETL",
+      "Data Pipelines",
+      "SQL",
+      "Python",
+      "Data Quality",
+      "Monitoring"
+    ]
   },
   {
     "title": "EdTech Support Chatbot",
@@ -73,6 +81,6 @@
     "description": "Built a modular EdTech support chatbot (easy → advanced): NLTK rules, intent classification, and an LLM prototype. Compared reliability/latency/maintainability tradeoffs and documented an upgrade path from GPT-2-era prototypes to modern LLMs with guardrails.",
     "image": "/edtech_support_chatbot.jpg",
     "link": "https://github.com/ericazhaoxy/EdTech-Support-Chatbot",
-    "tags": ["NLP", "LLM", "Keras", "Transformers", "System Design", "Chatbot"]
+    "tags": ["NLP", "LLM", "Keras", "Transformers", "System Design"]
   }
 ]
