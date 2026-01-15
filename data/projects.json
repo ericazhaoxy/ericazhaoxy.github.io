@@ -82,5 +82,19 @@
     "image": "/edtech_support_chatbot.jpg",
     "link": "https://github.com/ericazhaoxy/EdTech-Support-Chatbot",
     "tags": ["NLP", "LLM", "Keras", "Transformers", "System Design"]
+  },
+  {
+    "title": "Quantitative Risk Management",
+    "subtitle": "Options VaR",
+    "description": "",
+    "image": "",
+    "link": "",
+    "tags": [
+      "Risk Analysis",
+      "t-Copula",
+      "Black-Scholes",
+      "Transformers",
+      "Portfolio"
+    ]
   }
 ]
