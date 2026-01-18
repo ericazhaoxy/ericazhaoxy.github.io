@@ -86,7 +86,7 @@
   {
     "title": "Options VaR Risk Engine",
     "subtitle": "Options VaR",
-    "description": "Scenario-based options portfolio risk engine that simulates joint SPX-VIX shocks via a copula, re-prices a butterfly spread with Black Scholes, and computes 1-day 95% VaR from the simulated PnL distribution.",
+    "description": "A reproducible Python risk engine that uses a Gaussian copula with Student-t marginals to simulate joint SPX-VIX scenarios, re-price an options butterfly spread via Black-Scholes, and compute 1-day 95% VaR from the simulated PnL distribution.",
     "image": "",
     "link": "",
     "tags": [
