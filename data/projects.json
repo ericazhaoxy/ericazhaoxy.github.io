@@ -90,13 +90,12 @@
     "image": "/risk_engine.jpg",
     "link": "",
     "tags": [
-      "Risk Analytics",
       "Value at Risk (VaR)",
       "Monte Carlo",
-      "Quantitative Analysis",
-      "Risk Analysis",
       "Copula Modeling",
       "Black-Scholes",
+      "Student-t",
+      "SPX-VIX",
       "Options",
       "Python"
     ]
