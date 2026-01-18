@@ -87,16 +87,18 @@
     "title": "Options VaR Risk Engine",
     "subtitle": "Risk Modeling • Quantitative Analysis",
     "description": "A reproducible Python risk engine that uses a Gaussian copula with Student-t marginals to simulate joint SPX-VIX scenarios, re-price an options butterfly spread via Black-Scholes, and compute 1-day 95% VaR from the simulated PnL distribution.",
-    "image": "/Options_VaR_Risk_Engine.jpg",
+    "image": "/risk_engine.jpg",
     "link": "",
     "tags": [
+      "Risk Analytics",
+      "Value at Risk (VaR)",
+      "Monte Carlo",
       "Quantitative Analysis",
       "Risk Analysis",
-      "Value at Risk",
-      "t-Copula",
+      "Copula Modeling",
       "Black-Scholes",
-      "Transformers",
-      "Portfolio"
+      "Options",
+      "Python"
     ]
   }
 ]
