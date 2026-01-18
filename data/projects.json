@@ -84,9 +84,9 @@
     "tags": ["NLP", "LLM", "Keras", "Transformers", "System Design"]
   },
   {
-    "title": "Quantitative Risk Management",
+    "title": "Options VaR Risk Engine",
     "subtitle": "Options VaR",
-    "description": "Assessing 1-Day Risk with t-Copula and Black-Scholes Model",
+    "description": "Scenario-based options portfolio risk engine that simulates joint SPX-VIX shocks via a copula, re-prices a butterfly spread with Black Scholes, and computes 1-day 95% VaR from the simulated PnL distribution.",
     "image": "",
     "link": "",
     "tags": [
