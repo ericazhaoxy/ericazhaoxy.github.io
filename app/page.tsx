@@ -92,7 +92,7 @@ export default function Page() {
           </h2>
           <div className="max-w-2xl mx-auto text-center text-muted-foreground">
             <p className="mb-4">
-              A timeline of where I studied, what I focused on, and the
+              A snapshot of where I studied, what I focused on, and the
               milestones that brought me here.
             </p>
             <div className="relative mt-8 text-left">
