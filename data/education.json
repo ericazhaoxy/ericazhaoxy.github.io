@@ -1,26 +1,26 @@
 [
   {
-    "title": "School / Program",
-    "subtitle": "Degree • Major • Location",
-    "dates": "YYYY – YYYY",
-    "bullets": ["Focus / specialization", "Project / achievement"]
+    "title": "George Washington University",
+    "subtitle": "Master's • Data Science • Washington, DC, USA",
+    "dates": "2025",
+    "bullets": ["Machine Learning", "Data Visualization", "Big Data Analytics"]
   },
   {
-    "title": "School / Program",
-    "subtitle": "Program • Location",
-    "dates": "YYYY",
+    "title": "The Univeristy of Tokyo",
+    "subtitle": "Master's • Management • Tokyo, Japan",
+    "dates": "2021",
     "bullets": ["Highlight / milestone"]
   },
   {
-    "title": "School / Program",
-    "subtitle": "Program • Location",
-    "dates": "YYYY",
-    "bullets": ["Highlight / milestone"]
+    "title": "Josai International University",
+    "subtitle": "Bacholer's • Management Information System • Tokyo, Japan",
+    "dates": "2017",
+    "bullets": ["ICT", "Database Management"]
   },
   {
-    "title": "School / Program",
-    "subtitle": "Program • Location",
-    "dates": "YYYY",
-    "bullets": ["Highlight / milestone"]
+    "title": "Dalian University of Foreign Languages",
+    "subtitle": "Bacholer's • Marketing • Japanese • Dalian, China",
+    "dates": "2015",
+    "bullets": ["International Marketing", "Double-degree Program"]
   }
 ]
