@@ -1,25 +1,25 @@
 [
   {
     "title": "George Washington University",
-    "subtitle": "Master's • Data Science • Washington, DC, USA",
+    "subtitle": "M.S. • Data Science • Washington, DC, USA",
     "dates": "2025",
     "bullets": ["Machine Learning", "Data Visualization", "Big Data Analytics"]
   },
   {
     "title": "The Univeristy of Tokyo",
-    "subtitle": "Master's • Management • Tokyo, Japan",
+    "subtitle": "M.S. • Management • Tokyo, Japan",
     "dates": "2021",
     "bullets": ["Corporate Strategy", "Financial Management"]
   },
   {
     "title": "Josai International University",
-    "subtitle": "Bacholer's • Management Information System • Tokyo, Japan",
+    "subtitle": "B.S. • Management Information Systems (MIS) • Tokyo, Japan",
     "dates": "2017",
-    "bullets": ["ICT", "Database Management"]
+    "bullets": ["Systems Analysis & Design", "Database Management"]
   },
   {
     "title": "Dalian University of Foreign Languages",
-    "subtitle": "Bacholer's • Marketing • Japanese • Dalian, China",
+    "subtitle": "B.S. • Marketing • Japanese • Dalian, China",
     "dates": "2015",
     "bullets": ["International Marketing", "Double-degree Program"]
   }
