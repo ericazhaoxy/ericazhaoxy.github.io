@@ -12,6 +12,7 @@ import { AboutSection } from "../components/about-section";
 import { ChevronUp } from "lucide-react";
 import writing from "@/data/writing.json";
 import Link from "next/link";
+import education from "@/data/education.json";
 
 export default function Page() {
   const [navTransparent, setNavTransparent] = useState(true);
