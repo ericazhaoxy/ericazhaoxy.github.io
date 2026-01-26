@@ -1,0 +1,26 @@
+[
+  {
+    "title": "School / Program",
+    "subtitle": "Degree • Major • Location",
+    "dates": "YYYY – YYYY",
+    "bullets": ["Focus / specialization", "Project / achievement"]
+  },
+  {
+    "title": "School / Program",
+    "subtitle": "Program • Location",
+    "dates": "YYYY",
+    "bullets": ["Highlight / milestone"]
+  },
+  {
+    "title": "School / Program",
+    "subtitle": "Program • Location",
+    "dates": "YYYY",
+    "bullets": ["Highlight / milestone"]
+  },
+  {
+    "title": "School / Program",
+    "subtitle": "Program • Location",
+    "dates": "YYYY",
+    "bullets": ["Highlight / milestone"]
+  }
+]
