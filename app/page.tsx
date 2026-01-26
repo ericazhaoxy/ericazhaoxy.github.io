@@ -95,8 +95,35 @@ export default function Page() {
               Coming soon: A visual timeline of my education journey, schools,
               and key milestones.
             </p>
-            <div className="h-24 bg-muted rounded-xl flex items-center justify-center text-lg font-semibold text-muted-foreground/70">
-              [Timeline Placeholder]
+            <div className="relative mt-8 text-left">
+              <div className="absolute left-3 top-0 h-full w-px bg-border/70" />
+              <div className="space-y-6">
+                {education.map((e, idx) => (
+                  <div key={`${e.title}-${idx}`} className="relative pl-10">
+                    <div className="absolute left-1.5 top-2 h-3 w-3 rounded-full bg-gradient-to-r from-teal-400 via-purple-400 to-pink-400" />
+                    <div className="rounded-xl border border-border/60 bg-background/40 p-5">
+                      <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+                        <div className="font-semibold">{e.title}</div>
+                        <div className="text-sm text-muted-foreground">
+                          {e.dates}
+                        </div>
+                      </div>
+
+                      <div className="text-sm text-muted-foreground">
+                        {e.subtitle}
+                      </div>
+
+                      {e.bullets?.length ? (
+                        <ul className="mt-3 list-disc pl-5 text-sm text-muted-foreground space-y-1">
+                          {e.bullets.map((b: string) => (
+                            <li key={b}>{b}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
