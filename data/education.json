@@ -3,7 +3,12 @@
     "title": "George Washington University",
     "subtitle": "M.S. • Data Science • Washington, DC, USA",
     "dates": "2025",
-    "bullets": ["Machine Learning", "Data Visualization", "Big Data Analytics"]
+    "bullets": [
+      "Machine Learning",
+      "Algorithms Design",
+      "Data Visualization",
+      "Big Data Analytics"
+    ]
   },
   {
     "title": "The Univeristy of Tokyo",
