@@ -166,22 +166,7 @@ export default function Page() {
           </div>
         </section>
 
-        {/* Events Placeholder */}
-        <section id="events" className="py-16 md:py-24 px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-6 text-center text-gradient bg-gradient-to-r from-purple-400 via-pink-400 to-teal-400 bg-clip-text text-transparent">
-            Events & Volunteering
-          </h2>
-          <div className="max-w-2xl mx-auto text-center text-muted-foreground">
-            <p className="mb-4">
-              Photos + short notes from tech events and volunteering.
-            </p>
-            <ul className="space-y-2">
-              <li className="bg-muted rounded px-4 py-2 text-muted-foreground/70">
-                [Events Placeholder]
-              </li>
-            </ul>
-          </div>
-        </section>
+        <EventsVolunteeringSection />
 
         {/* Contact Section */}
         <section id="contact" className="py-20 md:py-32 px-4 md:px-8">
