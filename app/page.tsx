@@ -13,6 +13,7 @@ import { ChevronUp } from "lucide-react";
 import writing from "@/data/writing.json";
 import Link from "next/link";
 import education from "@/data/education.json";
+import EventsVolunteeringSection from "@/components/EventsVolunteeringSection";
 
 export default function Page() {
   const [navTransparent, setNavTransparent] = useState(true);
