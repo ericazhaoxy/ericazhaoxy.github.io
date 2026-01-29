@@ -22,11 +22,7 @@
     "title": "The Univeristy of Tokyo",
     "subtitle": "Master of Management • Tokyo, Japan",
     "dates": "2021",
-    "bullets": [
-      "Foreign Direct Investment",
-      "Corporate Strategy",
-      "Financial Management"
-    ]
+    "bullets": ["Foreign Direct Investment", "Corporate Strategy"]
   },
   {
     "title": "Josai International University",
