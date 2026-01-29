@@ -4,8 +4,9 @@
     "subtitle": "Master of Computer Science",
     "dates": "May 2026 - Present",
     "bullets": [
-      "Natural Language Processing",
       "Machine Learning",
+      "Natural Language Processing",
+
       "Distributed Systems",
       "Computer Security",
       "Cloud Computing"
@@ -15,12 +16,7 @@
     "title": "George Washington University",
     "subtitle": "M.S. Data Science • Washington, DC, USA",
     "dates": "May 2025",
-    "bullets": [
-      "Machine Learning",
-      "Algorithms Design",
-      "Data Visualization",
-      "Big Data Analytics"
-    ]
+    "bullets": ["Machine Learning", "Algorithms Design", "Data Visualization"]
   },
   {
     "title": "The Univeristy of Tokyo",
