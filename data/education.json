@@ -1,5 +1,16 @@
 [
   {
+    "title": "University of Illinois Urbana-Champaign",
+    "subtitle": "Master of Computer Science",
+    "dates": "2025",
+    "bullets": [
+      "Machine Learning",
+      "Algorithms Design",
+      "Data Visualization",
+      "Big Data Analytics"
+    ]
+  },
+  {
     "title": "George Washington University",
     "subtitle": "M.S. • Data Science • Washington, DC, USA",
     "dates": "2025",
