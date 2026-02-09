@@ -2,15 +2,8 @@
   {
     "title": "University of Illinois Urbana-Champaign",
     "subtitle": "Master of Computer Science",
-    "dates": "Incoming May 2026",
-    "bullets": [
-      "Machine Learning",
-      "Natural Language Processing",
 
-      "Distributed Systems",
-      "Computer Security",
-      "Cloud Computing"
-    ]
+    "bullets": ["Machine Learning", "Natural Language Processing"]
   },
   {
     "title": "George Washington University",
