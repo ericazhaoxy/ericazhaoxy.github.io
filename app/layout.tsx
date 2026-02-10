@@ -1,5 +1,5 @@
 "use client"
-
+# This file is the root layout for the Next.js application. It sets up the HTML structure, includes global styles, and provides context for the splash screen completion status.
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 import { Inter } from "next/font/google"
