@@ -3,7 +3,11 @@
     "title": "Georgia Institute of Technology",
     "subtitle": "M.S. Computer Science • USA",
     "dates": "August 2026",
-    "bullets": ["Machine Learning", "Algorithms Design", "Data Visualization"]
+    "bullets": [
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Software Development"
+    ]
   },
   {
     "title": "George Washington University",
