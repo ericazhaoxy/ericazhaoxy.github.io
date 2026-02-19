@@ -101,16 +101,11 @@
     ]
   },
   {
-    "title": "LLM-Powered Code Review Assistant",
+    "title": "Decentralized Lottery System Smart Contract",
     "subtitle": "LLMs • Software Engineering",
     "description": "Designed an LLM-powered code review assistant that generates actionable feedback on code quality, style, and potential bugs. Evaluated its performance against human reviewers and iterated on prompt engineering for improved reliability.",
     "image": "/code_review_assistant.jpg",
-    "link": "https://github.com/ericazhaoxy/LLM-Powered-Code-Review-Assistant",
-    "tags": [
-      "LLMs",
-      "Code Review",
-      "Prompt Engineering",
-      "Software Engineering"
-    ]
+    "link": "https://github.com/ericazhaoxy/Decentralized-Lottery-Smart-Contract",
+    "tags": ["Smart Contracts", "Ethereum", "Solidity", "Web3", "Blockchain"]
   }
 ]
