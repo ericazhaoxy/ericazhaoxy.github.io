@@ -103,8 +103,8 @@
   {
     "title": "Decentralized Lottery System Smart Contract",
     "subtitle": "LLMs • Software Engineering",
-    "description": "Designed an LLM-powered code review assistant that generates actionable feedback on code quality, style, and potential bugs. Evaluated its performance against human reviewers and iterated on prompt engineering for improved reliability.",
-    "image": "/code_review_assistant.jpg",
+    "description": "A decentralized lottery system implemented as a Solidity smart contract on the Ethereum blockchain. The contract allows users to enter the lottery by sending Ether, and a random winner is selected at regular intervals using Chainlink VRF for verifiable randomness. The project demonstrates secure and transparent lottery mechanics while leveraging blockchain technology.",
+    "image": "/decentralized_lottery_smart_contract.jpg",
     "link": "https://github.com/ericazhaoxy/Decentralized-Lottery-Smart-Contract",
     "tags": ["Smart Contracts", "Ethereum", "Solidity", "Web3", "Blockchain"]
   }
